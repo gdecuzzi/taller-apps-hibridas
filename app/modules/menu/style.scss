@@ -1,0 +1,43 @@
+.menu-root{
+  @include display-flex();
+  @include flex-flow(column nowrap);
+  @include align-items(stretch);
+  position: inherit;
+
+  .my-content{
+    @include flex(1  1 0);
+    position: relative;
+
+  }
+
+  .tab-bar{
+    @include flex(0 0 $min-touch-area-size);
+    @include flex-center-all();
+    border-top: none;
+
+    .tab-button{
+      @include flex(1 1 auto);
+      @include flex-center-all();
+      @include flex-grow(1);
+      @include flex-basis(0);
+
+      opacity: 1;
+      min-height: $min-touch-area-size;
+      background-color: $primary-color;
+      color: $secondary-color;
+      text-align: center;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &.selected{
+        border-bottom: solid $secondary-color 4px;
+      }
+
+      i{
+        margin-right: 7px;
+        font-size: 20px;
+      }
+    }
+  }
+}

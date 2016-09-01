@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *; img-src * data:">
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- App Settings file (source located under app_settings). Copied by gulp's env-dev/env-staging tasks -->
+    <script src="settings.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- Cordova extensions for angular, adds localization-->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+
+    <!-- Angular plugin for Google maps and related dependencies -->
+    <script src="lib/underscore/underscore-min.js"></script><script src="lib/angular-underscore-module/angular-underscore-module.js"></script>
+
+    <!-- inject:js -->
+    <!-- endinject -->
+  </head>
+
+  <body ng-app="ejemploconf">
+    <ion-nav-bar class="bar-stable" align-title="center">
+      <ion-nav-back-button default-nav-back-button ng-click="goBack()">
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="root-view"></ion-nav-view>
+  </body>
+</html>
