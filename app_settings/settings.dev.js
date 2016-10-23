@@ -1,4 +1,3 @@
 AppSettings = {
-  api_url: "http://localhost:3000",
-  supported_api_version: "1.0"
+  api_url: "http://campuse.ro/api/legacy/events/campus-party-argentina-2016"
 };

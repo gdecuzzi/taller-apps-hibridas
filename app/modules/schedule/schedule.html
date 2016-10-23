@@ -1,14 +1,14 @@
 <ion-view view-title="Planificación">
-  <ion-nav-title>   
+  <ion-nav-title>
     <img src="assets/img/logo_small.png">
   </ion-nav-title>
 
   <ion-content class="schedule" scroll="false">
     <ion-scroll class="list-scroll" delegate-handle="schedule">
-      <div>
-        <p class="message">
-          Aca deberiamos ver la planificacion
-        </p>
+      <div ng-repeat="talk in schedule">
+        <p class="message">{{talk.title}}</p>
+        <p class="message">{{talk.stage_name}}</p>
+        <p class="message">{{talk.date}}</p>
       </div>
     </ion-scroll>
   </ion-content>
