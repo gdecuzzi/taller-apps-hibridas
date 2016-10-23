@@ -5,7 +5,6 @@ angular.module('ejemploconf.services')
   };
 
   function getSchedule(successCallback, errorCallback) {
-    console.log("deberia ir al backend");
     var url = AppSettings.api_url + '/schedule';
     var canceler = $q.defer();
     $http.get(url, {timeout: canceler.promise}).then(function(response){
