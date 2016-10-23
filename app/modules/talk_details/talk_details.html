@@ -4,7 +4,7 @@
   </ion-nav-title>
 
   <ion-content class="talk-details" scroll="false">
-    <ion-scroll class="list-scroll" delegate-handle="schedule">
+    <ion-scroll zooming="true" direction="xy" class="list-scroll">
       <div>
         <img ng-src="{{talk.mobile_image}}">
         <h2 class="message">{{talk.title}}</h2>
