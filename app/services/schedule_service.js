@@ -8,11 +8,15 @@ angular.module('ejemploconf.services')
     var url = AppSettings.api_url + '/schedule';
     var canceler = $q.defer();
     $http.get(url, {timeout: canceler.promise}).then(function(response){
-      var event = response.data;
-      successCallback(event);
+      cache.schedule = response.data;
+      successCallback(response.data);
     }, errorCallback);
     return canceler;
   }
+
+    function getTalksOnDate(day){
+      return _.filter(cache.schedule, function(talk){ return day.isSame(talk.date,'day');});
+    }
 
   function getTalkById(talkId, successCallback, errorCallback){
     var cachedTalk = _.find(cache.schedule, function(talk){
@@ -35,6 +39,7 @@ angular.module('ejemploconf.services')
 
   return {
     schedule: getSchedule,
+    scheduledOn: getTalksOnDate,
     talkById: getTalkById
   }
 });
