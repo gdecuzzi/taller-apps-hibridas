@@ -38,3 +38,7 @@ angular.module('ejemploconf.services')
     talkById: getTalkById
   }
 });
+
+angular.module('ejemploconf.services').service('TalkService', function() {
+  this.selectedTalk
+});

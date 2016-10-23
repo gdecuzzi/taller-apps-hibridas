@@ -5,7 +5,7 @@
 
   <ion-content class="schedule" scroll="false">
     <ion-scroll class="list-scroll" delegate-handle="schedule">
-      <ion-item ng-repeat="talk in schedule" class="item-avatar">
+      <ion-item ng-repeat="talk in schedule" class="item-avatar" ng-click="setTalk(talk)">
         <img ng-src="{{talk.mobile_image}}">
         <h2 class="message">{{talk.title}}</h2>
         <h3 class="message">{{talk.stage_name}}</h3>
