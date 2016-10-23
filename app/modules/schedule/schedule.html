@@ -5,11 +5,12 @@
 
   <ion-content class="schedule" scroll="false">
     <ion-scroll class="list-scroll" delegate-handle="schedule">
-      <div ng-repeat="talk in schedule">
-        <p class="message">{{talk.title}}</p>
-        <p class="message">{{talk.stage_name}}</p>
+      <ion-item ng-repeat="talk in schedule" class="item-avatar">
+        <img ng-src="{{talk.mobile_image}}">
+        <h2 class="message">{{talk.title}}</h2>
+        <h3 class="message">{{talk.stage_name}}</h3>
         <p class="message">{{talk.date}}</p>
-      </div>
+      </ion-item>
     </ion-scroll>
   </ion-content>
 </ion-view>
