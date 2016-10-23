@@ -7,12 +7,14 @@
     <ion-scroll zooming="true" direction="xy" class="list-scroll">
       <div>
         <img ng-src="{{talk.mobile_image}}">
-        <h2 class="message">{{talk.title}}</h2>
-        <h3 class="message">{{talk.stage_name}}</h3>
-        <p>{{talk.description}}</p>
+        <div class="content">
+          <h2 class="message">{{talk.title}}</h2>
+          <h3 class="message">{{talk.stage_name}}</h3>
+          <p>{{talk.description}}</p>
 
-        <h3>Ponentes</h3>
-        <p>{{talk.speakers}}</p>
+          <h3>Ponentes</h3>
+          <p>{{talk.speakers}}</p>
+        </div>
       </div>
     </ion-scroll>
   </ion-content>
