@@ -58,6 +58,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "../www/lib/ionic/scss/ionic";
 
 // Custom styles
+@import "./shared/fonts";
 @import "./modules/menu/style";
 @import "./modules/schedule/style";
 @import "./modules/talk_details/style";
@@ -92,22 +93,3 @@ ion-nav-view{
     background-color: $secondary-stable;
   }
 }
-
-.circle-button{
-  width: $min-touch-area-size;
-  height: $min-touch-area-size;
-  border: medium none;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 25px;
-  right: 10px;
-  font-size: 26px;
-  background-color: rgba(58, 36, 87, 0.7);
-  color: $secondary-color;
-}
-
-.bg-violet{background-color: $secondary-stable;}
-.bg-green{background-color: $green;}
-.bg-yellow{background-color: $yellow;}
-.bg-blue{background-color: $blue;}
-.bg-red{background-color: $red;}
