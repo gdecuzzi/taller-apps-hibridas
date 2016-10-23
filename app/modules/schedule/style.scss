@@ -19,24 +19,20 @@
     }
 
     .date{
-
     }
 
     .stage{
       margin-bottom: 3px;
       color: $green;
       line-height: 1em;
+      font-weight: bold;
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
       font-size: 13px;
-      padding: 3px 5px;
-      border-radius: 8px;
-      display: inline-block;
-      position: absolute;
+      text-align: right;
       bottom: 0;
       right: 0;
-      text-align: right;
     }
   }
 
