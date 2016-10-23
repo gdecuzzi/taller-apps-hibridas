@@ -16,7 +16,7 @@ angular.module('ejemploconf', [
   $ionicConfigProvider.views.transition('none');
   $ionicConfigProvider.views.swipeBackEnabled(false);
 })
-.run(function($ionicPlatform, $cordovaSplashscreen, StatsService, $cordovaKeyboard, $ionicPopup) {
+.run(function($ionicPlatform, $cordovaSplashscreen, $cordovaKeyboard, $ionicPopup) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard for form inputs)
     if (window.cordova && window.cordova.plugins.Keyboard) {

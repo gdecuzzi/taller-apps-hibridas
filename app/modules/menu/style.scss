@@ -18,8 +18,6 @@
     .tab-button{
       @include flex(1 1 auto);
       @include flex-center-all();
-      @include flex-grow(1);
-      @include flex-basis(0);
 
       opacity: 1;
       min-height: $min-touch-area-size;

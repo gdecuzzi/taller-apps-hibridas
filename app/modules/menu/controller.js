@@ -1,4 +1,4 @@
-angular.module('socialdoors.controllers')
+angular.module('ejemploconf.controllers')
 .controller('MenuCtrl', function($scope, $state, $ionicHistory) {
   $scope.$on('$ionicView.beforeEnter', function(){
     $ionicHistory.clearHistory();

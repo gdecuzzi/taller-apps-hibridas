@@ -15,7 +15,7 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
-$primary-color: #3a2457;
+$primary-color: #1531AE;
 $secondary-color: #fff;
 $red:#F05124;
 $green:#A1BF27;
@@ -36,11 +36,6 @@ $font-family-light-sans-serif: "MontserratLight";
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
-
-// The path for carousel styles, relative to the built CSS in www/css
-@import "../www/lib/angular-carousel/src/css/angular-carousel";
-
-@import "../www/lib/bourbon/app/assets/stylesheets/_bourbon";
 
 @mixin gpu-based(){
   will-change: transform;
@@ -63,7 +58,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "../www/lib/ionic/scss/ionic";
 
 // Custom styles
-@import "./shared/fonts";
 @import "./modules/menu/style";
 @import "./modules/schedule/style";
 @import "./modules/talk_details/style";
