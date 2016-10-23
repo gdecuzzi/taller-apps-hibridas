@@ -4,13 +4,14 @@
   </ion-nav-title>
 
   <ion-content class="schedule" scroll="false">
-    <ion-scroll class="list-scroll" delegate-handle="schedule">
+    <ion-scroll zooming="true" direction="xy" class="list-scroll">
       <ion-item ng-repeat="talk in schedule" class="item-avatar" ng-click="setTalk(talk)">
         <img ng-src="{{talk.mobile_image}}">
-        <h2 class="message">{{talk.title}}</h2>
-        <h3 class="message">{{talk.stage_name}}</h3>
-        <p class="message">{{talk.date}}</p>
+        <h2 class="title">{{talk.title}}</h2>
+        <div class="stage">{{talk.stage_name}}</div>
+        <p class="date">{{talk.date | amDateFormat:'DD/MM'}}</p>
       </ion-item>
     </ion-scroll>
   </ion-content>
 </ion-view>
+

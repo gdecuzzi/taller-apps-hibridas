@@ -8,8 +8,10 @@ angular.module('ejemploconf', [
   'ejemploconf.controllers',
   'ngCordova',
   'underscore',
-  'ejemploconf.routes'
+  'ejemploconf.routes',
+  'angularMoment'
 ])
+
 .config(function($ionicConfigProvider){
   $ionicConfigProvider.backButton.previousTitleText(false);
   $ionicConfigProvider.backButton.text("   ");
