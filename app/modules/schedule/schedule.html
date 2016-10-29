@@ -2,8 +2,21 @@
   <ion-nav-title>
     <img src="assets/img/logo_small.png">
   </ion-nav-title>
-
   <ion-content class="schedule" scroll="false">
+    <div class="primary-filters">
+      <div class="filter" ng-click="yesterdayTalks()">
+        <a class="icon ion-android-arrow-back">Ayer</a>
+      </div>
+
+      <div class="filter" ng-click="todayTalks()">
+        <a class="icon ion-android-arrow-down">Hoy</a>
+      </div>
+
+      <div class="filter" ng-click="allTalks()">
+        <a class="icon ion-android-done-all">Todos</a>
+      </div>
+    </div>
+
     <ion-scroll zooming="true" direction="xy" class="list-scroll">
       <ion-item ng-repeat="talk in schedule" class="item-avatar" ng-click="setTalk(talk)">
         <img ng-src="{{talk.mobile_image}}">

@@ -1,0 +1,15 @@
+.schedule{
+  @include display-flex();
+  @include flex-flow(column nowrap);
+
+  background-color: $blue;
+
+  .primary-filters{
+    color: white;
+    font-size: 1.2em;
+    @include display-flex();
+    @include flex-flow(row nowrap);
+    @include justify-content(space-around);
+    @include align-items(center);
+  }
+}
